@@ -1,3 +1,3 @@
 # To Do App
 
-Will be updated later.
+Will be updated after its completed.
