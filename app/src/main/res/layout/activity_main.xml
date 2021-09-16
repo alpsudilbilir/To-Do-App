@@ -20,8 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="4"
             android:hint="@string/AddToDo"
-            android:textColorHint="@color/black"
-            android:textSize="20sp"
+            android:textSize="25sp"
             tools:ignore="TextContrastCheck" />
 
         <Button
@@ -29,15 +28,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/yellow"
+            android:backgroundTint="@color/gray"
             android:text="@string/add"
             android:background="@drawable/circle"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20sp" />
     </LinearLayout>
 
-    <ListView
-        android:id="@+id/listView"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
 </LinearLayout>

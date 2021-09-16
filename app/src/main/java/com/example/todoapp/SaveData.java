@@ -14,10 +14,9 @@ public class SaveData {
 
     private final static String FILENAME = "database.dat";
 
-    public static void writeData(ArrayList<String> items, Context context){
-
+    public static void writeData(ArrayList<String> items, Context context) {
         try {
-            FileOutputStream fos = context.openFileOutput(FILENAME,Context.MODE_PRIVATE);
+            FileOutputStream fos = context.openFileOutput(FILENAME, Context.MODE_PRIVATE);
             ObjectOutputStream oas = new ObjectOutputStream(fos);
             oas.writeObject(items);
             oas.close();
@@ -27,6 +26,8 @@ public class SaveData {
             e.printStackTrace();
         }
     }
+
+
     public static ArrayList<String> readData(Context context){
         ArrayList<String> items = null;
         try {
